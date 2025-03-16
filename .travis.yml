@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true sudharsank/docker-react npm run test
 
 before_deploy: "echo 'ready?'"
+dist: focal
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
